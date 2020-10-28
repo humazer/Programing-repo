@@ -23,7 +23,7 @@ char *get_animal_type_name(enum animal_type type)
 		result = "Коровыч";
 		break;
 	case PIG:
-		result = "Свиня";
+		result = "Свынька";
 		break;
 	default:
 		result = "N/A";
