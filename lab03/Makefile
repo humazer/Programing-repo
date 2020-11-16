@@ -5,7 +5,7 @@ C_OPTS = -std=gnu11 -g -Wall -Wextra -Werror -Wformat-security -Wfloat-equal -Ws
 all: clean prep compile run
 
 clean:
-	rm -rf
+	rm -rf dist
 prep:
 	mkdir dist
 compile: task1main.bin task2main.bin task3main.bin task4main.bin task5main.bin task6main.bin

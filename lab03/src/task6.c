@@ -1,7 +1,9 @@
-int main() {
-   int first_number = 50;
-   int second_number = 52;
-   int result = (first_number + second_number) * (second_number - first_number + 1) / 2; //  Находим сумму арифметической прогрессии по формуле.
-   return 0;
+int main() 
+{
+    int A = 51;
+    int B = 53;
+    int C = B - A + 1;
+    int result = (( A + B ) * C ) / 2;
+    return 0;
 }
 

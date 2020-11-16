@@ -1,7 +1,9 @@
-int main() {
-    int num = 123;
-    float result = (float) 100 * (num / 100) / (num % 10); // Сравниваем первую и последнюю цифру
-    int foo = (int) result;
-    result = (float) foo / 100; // Обрезаем результат до второго знака после запятой
-    return 0;
+int main() 
+{
+	int NUM = 123;
+ 	float a = NUM / 100;
+ 	float b = NUM % 10;
+ 	float diff = a / b;
+ 	float rrdiff = ((float)(((int)(diff * 100)) / 100.0 )); 
+ return 0;
 }

@@ -1,5 +1,9 @@
-int main() {
-   int my_number = 375;
-   int result = 100 * (my_number % 10) + 10 * ((my_number / 10) % 10) + (my_number / 100); //Разбиваем число на цифры, потом в обратном порядке собираем
-   return 0;
+int main()
+{
+    int NUM = 123;
+    int num1 = NUM / 100;    
+    int num2 = NUM / 10 % 10;
+    int num3 = NUM % 10;
+    int pp = num3 * 100 + num2 * 10 + num1;
+    return 0;
 }

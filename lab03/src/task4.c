@@ -1,10 +1,11 @@
-int main() {
-    int my_number = 1234; // Задаём число
-    int p = 8; // Задаём систему исчисления
-    int result = (my_number / 1000) * (p * p * p) + 
-		(my_number / 100 % 10) * (p * p) + 
-		(my_number / 10 % 10) * p + 
-		(my_number % 10); // Вычисляем по формуле
-    return 0;
+int main()
+{
+    int NUM = 3244; // Число в 8-ой системе счисления
+    int O = 8; // Система счиления
+    int a = NUM / 1000;
+    int b = NUM / 100 % 10;
+    int c = NUM % 100 / 10;
+    int d = NUM % 10;
+    int notation = ((O * O * O * a) + (O * O * b) + (O * c) + (1 * d)); // Перевод в десятичную систему счисления
+        return 0;
 }
-

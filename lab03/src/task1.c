@@ -1,7 +1,9 @@
-int main() {
-   int resistance_1 = 12.0; // Сопр рез 1
-   int resistance_2 = 3.0; // Сопр рез 2
-   int resistance_3 = 12.0; // Сопр рез 3
-   float result = 1.0 / (1.0 / resistance_1 + 1.0 / resistance_2 + 1.0 / resistance_3); // По формуле 1/R = 1/R1 + 1/R2 + 1/R3
-   return 0;
+int main()
+{
+    float res1 = 220;
+    float res2 = 230;
+    float res3 = 490;
+    float formula = (1.0 / res1) + (1.0 / res2) + (1.0 / res3);
+    float R = 1.0 / formula; // Результат в Ом
+    return 0;
 }
