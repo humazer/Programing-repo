@@ -3,6 +3,6 @@
 Розробити программу,яка розгалужується з метою обчислення значення (за умовами).
 
 
-@author Mokrosloev Anton.
+@Mokrosloev Anton.
 @date 05-nov-2020
 
