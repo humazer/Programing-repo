@@ -4,6 +4,6 @@ int main()
  	float a = NUM / 100;
  	float b = NUM % 10;
  	float diff = a / b;
- 	float rrdiff = ((float)(((int)(diff * 100)) / 100.0 )); 
+ 	float rrdiff = ((float)(((int)(diff * 1000)) / 1000.0 )); 
  return 0;
 }
