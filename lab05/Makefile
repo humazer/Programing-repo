@@ -1,25 +1,21 @@
-targets = main.bin test.bin
+targets = main.bin
 CC = gcc
-C_OPTS = -std=gnu11 -g -Wall -Wextra -Werror -Wformat-security -Wfloat-equal -Wshadow -Wconversion -Wlogical-not-parentheses -Wnull-dereference -I./src
+C_OPTS = -std=gnu11 -g -Wall -Wextra -Wformat-security -Wfloat-equal -Wshadow -Wconversion -Wlogical-not-parentheses -Wnull-dereference -I./src
 
-all: clean prep compile run
+all: clean prep compile
 
 clean:
 	rm -rf dist
 prep:
 	mkdir dist
-compile: task1main.bin task2main.bin task3main.bin task4main.bin task5main.bin task6main.bin 
+compile:
+	$(CC) $(C_OPTS) "task 1/src/main.c" -o dist/main1.bin
+	$(CC) $(C_OPTS) "task 2/src/main.c" -o dist/main2.bin
+	$(CC) $(C_OPTS) "task 3/src/main.c" -o dist/main3.bin
+	$(CC) $(C_OPTS) "task 4/src/main.c" -o dist/main4.bin
+	$(CC) $(C_OPTS) "task 5/src/main.c" -o dist/main5.bin
+doxygen:
+	doxygen Doxyfile
+format: #TODO
 
-task1main.bin:
-	gcc -g src/task1.c -o dist/task1main.bin
-task2main.bin:
-	gcc -g src/task2.c -o dist/task2main.bin
-task3main.bin:
-	gcc -g src/task3.c -o dist/task3main.bin
-task4main.bin:
-	gcc -g src/task3.c -o dist/task3main.bin
-task5main.bin:
-	gcc -g src/task3.c -o dist/task3main.bin
-task6main.bin:
-	gcc -g src/task3.c -o dist/task3main.bin
-
+tidy: # TODO
