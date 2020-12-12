@@ -1,15 +1,14 @@
-int main () 
+int main()
 {
-	int a = 8, b = 5, c = 9;
-	int min = 0;
-{
-	if (a > b) min = b;
-	}
-{
-	if (min > c) min = c;
+	float num = 123.656; // Заданное число
+	int num1 = num; // Целая часть числа
+	int num2 = ((num - num1) * 1000); // Дробная часть
+	int zero = 0; 
+	if (num1 == 0) {
+		zero = 1; // 1 - Есть 0
 	} 
-{
-	if (min > a) min = a;
-	}  
+	
+	float diff = (float)num2 / (float)num1; // Разница дробной части и целой
+	float rdiff = ((float)(((int)(diff * 100)) / 100.0)); // Округление
 	return 0;
 }

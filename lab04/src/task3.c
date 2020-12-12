@@ -1,17 +1,24 @@
-int main () 
+int main()
 {
-	int year = 0;
-	int century;
-	if (year % 100 == 0) 
-	{
-		century = year / 100;
-	}
-	else
-	{
-		century = (year / 100) + 1;
-	}
-	return 0;
-}
-
+	int k = 6;
+	int m = 3;
+	int n = 1;
+	int prmn;
 	
-
+	if (k > m) {
+		prmn = k;
+		k = m;
+		m = prmn;
+	}
+	if (m > n) {
+		prmn = m;
+		m = n;
+		n = prmn;
+	}
+	if (k > m) {
+		prmn = k;
+		k = m;
+		m = prmn;
+	}
+return 0;
+}
