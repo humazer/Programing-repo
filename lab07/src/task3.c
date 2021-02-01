@@ -1,10 +1,9 @@
-
 // Преждевременное объявление функции
 int luckyticket_for(int num);
 int luckyticket_while(int num);
 int luckyticket_dowhile(int num);
-
 int main()
+
 {
 	int num = 213022; // Номер билета
 	int luckyticketResult_for = luckyticket_for(num); // Если luckyticketResult_for = 1 - билет везучий 
